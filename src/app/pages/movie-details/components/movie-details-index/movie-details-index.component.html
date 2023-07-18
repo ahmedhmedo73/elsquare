@@ -1,0 +1,32 @@
+<div
+  class="container-fluid mx-0 px-0 movie-details-container row position-relative"
+  *ngIf="movieDetails"
+>
+  <div class="overlay"></div>
+
+  <div
+    class="left-section col-md-6 d-flex flex-column justify-content-center p-3 gap-3"
+  >
+    <div class="movie-title d-flex gao-3">
+      <h2 class="text-white">{{ movieDetails.title }}</h2>
+      <div
+        class="rate d-flex px-3 h-100 justify-content-center align-items-center"
+      >
+        <p class="m-0 rate-avg text-white">{{ movieDetails.vote_average }}</p>
+        <img
+          src="../../../../../assets/images/star-icon.png"
+          class="star-icon"
+          alt=""
+        />
+      </div>
+    </div>
+    <h6 class="text-white lh-base">{{ movieDetails.overview }}</h6>
+    <div class="release-date d-flex gap-1 text-white">
+      <p class="m-0">Release Date :</p>
+      <p class="m-0">{{ movieDetails.release_date | date }}</p>
+    </div>
+  </div>
+  <div class="right-section col-md-6 p-3 px-5">
+    <img [src]="url + movieDetails.poster_path" class="w-100 h-100" alt="" />
+  </div>
+</div>

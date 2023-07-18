@@ -1,0 +1,13 @@
+<div class="container px-5 py-3">
+  <div class="movies-container">
+    <div class="movie-card-container" *ngFor="let movie of movies">
+      <app-movie-card [movie]="movie"></app-movie-card>
+    </div>
+  </div>
+  <p-paginator
+    (onPageChange)="onPageChange($event)"
+    [totalRecords]="totalMovies"
+    [first]="0"
+    [rows]="10"
+  ></p-paginator>
+</div>

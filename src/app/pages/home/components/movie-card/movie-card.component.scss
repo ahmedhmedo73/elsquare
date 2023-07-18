@@ -1,0 +1,51 @@
+.upper-section,
+.lower-section {
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.519);
+}
+.upper-section {
+  top: -50px;
+  height: 50px;
+}
+.lower-section {
+  bottom: -100px;
+}
+.movie-img{
+    object-fit: cover;
+}
+.movie-card {
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  &:hover {
+    .upper-section {
+      top: 0;
+    }
+    .lower-section {
+      bottom: 0;
+    }
+  }
+}
+.star-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-watch {
+  height: 30px;
+  width: 80px;
+  border: 0;
+  border-radius: 40px;
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgba(30, 213, 169, 1) 0%,
+    rgba(1, 180, 228, 1) 100%
+  );
+}

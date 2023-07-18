@@ -1,0 +1,18 @@
+<div
+  class="container  d-flex flex-column justify-content-center gap-3 home-intro-section py-2 px-5"
+>
+  <h2 class="text-white text-center">Welcome</h2>
+  <h3 class="text-white text-center">
+    Millions of movies, TV shows and people to discover. Explore now
+  </h3>
+  <form [formGroup]="saerchForm" class="search-form">
+    <input
+      type="search"
+      class="search-input"
+      formControlName="text"
+      (ngModelChange)="searchMovie()"
+      placeholder="Search for a movie, tv show, person......"
+    />
+    <button (click)="searchMovie()" class="search-btn">Search</button>
+  </form>
+</div>

@@ -1,0 +1,100 @@
+<!-- <div
+  class="container-fluid nav-bar-container d-flex justify-content-between px-5"
+>
+  <a class="logo" routerLink="">
+    <img src="../../../../../assets/images/Logo.png" alt="logo" class="logo" />
+  </a>
+  <div class="links">
+    <ul class="d-flex gap-5 list-unstyled mb-0 align-items-center h-100">
+      <li class="" *ngFor="let link of links">
+        <a class="text-decoration-none text-white" [routerLink]="link.route">
+          {{ link.title }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div> -->
+
+<!-- <nav class="navbar navbar-expand-lg px-4 nav-bar-container">
+  <a class="logo navbar-brand" routerLink="">
+    <img src="../../../../../assets/images/Logo.png" alt="logo" class="logo" />
+  </a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item" *ngFor="let link of links">
+        <a class="nav-link text-white" [routerLink]="link.route">{{
+          link.title
+        }}</a>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg px-4 nav-bar-container" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="logo navbar-brand" routerLink="">
+      <img
+        src="../../../../../assets/images/Logo.png"
+        alt="logo"
+        class="logo"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon text-white"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item" *ngFor="let link of links">
+          <a class="nav-link text-white" [routerLink]="link.route">{{
+            link.title
+          }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav> -->

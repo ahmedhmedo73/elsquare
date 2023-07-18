@@ -1,0 +1,45 @@
+:host {
+  --movie-backdrop-url: "";
+}
+.movie-details-container {
+  overflow: hidden;
+  min-height: 93vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &::before {
+    content: "";
+    background-image: var(--movie-backdrop-url);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    // opacity: 0.5;
+    z-index: -1;
+  }
+}
+.movie-backdrop {
+  filter: brightness(0.5);
+  object-fit: cover;
+  object-position: center;
+}
+// .left-section,
+// .right-section {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   width: 50%;
+// }
+// .right-section {
+//   right: 0;
+// }
+// .left-section {
+//   left: 0;
+// }
+.star-icon {
+  width: 20px;
+  height: 20px;
+}
