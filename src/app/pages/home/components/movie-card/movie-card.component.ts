@@ -10,5 +10,5 @@ import { environment } from 'src/app/core/environments/environment.dev';
 export class MovieCardComponent {
   @Input('movie') movie!: Movie;
   url: string = environment.imgURL;
-  defaultImage : string  = '../../../../../assets/images/spinner-icon-gif.png';
+  defaultImage : string  = 'assets/images/spinner-icon-gif.png';
 }
