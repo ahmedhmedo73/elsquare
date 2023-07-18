@@ -16,6 +16,7 @@
 }
 .search-input {
   border: 0;
+  min-width: 10px;
   &:focus {
     outline: 0;
   }
